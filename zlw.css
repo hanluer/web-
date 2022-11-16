@@ -1,4 +1,4 @@
-body{margin:0;}
+body{margin:0;width: 1920px;}
 #all{width:1000px;margin:auto;}
 #head{width:1000px;height:195px;margin: auto;background-image: url("./img/header_footer.png");}
 #logo{width: 960px;height: 80px;margin:auto;}
@@ -18,12 +18,12 @@ body{margin:0;}
 #introduction p{margin:0 0 0 10px;}
 #logo p{color:#666666;font-size:12px}
 #logo p a{color:#666666;}
-.drop_menu{height: 50px;width:130px;float: left;}
-#drop_menu1{position: absolute;top:30px;left:665px;}
-#drop_menu2{position: absolute;top:30px;left:795px;}
-#drop_menu3{position: absolute;top:30px;left:925px;}
-#drop_menu4{position: absolute;top:30px;left:1055px;}
-#drop_menu5{position: absolute;top:30px;left:1185px;}
+.drop_menu{height: 50px;width:125px;float: left;}
+#drop_menu1{position: relative;top:0px;left:-20px;}
+#drop_menu2{position: relative;top:0px;left:-20px;}
+#drop_menu3{position: relative;top:0px;left:-15px;}
+#drop_menu4{position: relative;top:0px;left:-5px;}
+#drop_menu5{position: relative;top:0px;left:-5px;}
 .drop_menu p{margin:27px 0 0 18px;}
 #drop_menu1:hover{}
 #drop_menu2:hover{}
