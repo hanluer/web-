@@ -30,10 +30,10 @@ body{margin:0;width: 1920px;}
 #drop_menu3:hover{}
 #drop_menu4:hover{}
 #drop_menu5:hover{}
-#menu ul{float: left;margin:0;padding-left: 30px;}
+#menu ul{float: left;margin:0;padding-left: 15px;}
 #menu li{float: left;list-style-type: none;}
 #menu a{text-decoration:none;color: white}
-#menu p{color: white;}
+#menu p{color: white;font-size: 15px;}
 #menu a:hover{color:yellow;text-decoration: underline;}
 #search{width: 940px;margin: auto;height: 30px;}
 #search select{font-size: 13px; color: #666666;margin:0 10px 0 10px; border:0;position: relative;top:-10px;}
