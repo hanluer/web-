@@ -96,7 +96,7 @@ body{margin:0;width: 1920px;}
 
 
 #right_1{width:235px;height:125px;margin:10px 0 6px 9px;float: left;}
-#now_time{margin:0 0 15px 0; padding-left: 10px; font-size:13px;color: #333333; background-color: #cccccc;}
+#now_time{margin:0 0 15px 0; padding-left: 15px; font-size:13px;color: #333333; background-color: #f1f1f1;}
 #now_weather{border: #cccccc 1px dashed;}
 #right_2{width:237px;height:160px;margin:5px 0 0 9px;float: left;}
 #right_2bg{width:237px;height:34px;background-image: url(./img/index_bg3.png);}
