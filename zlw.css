@@ -46,14 +46,19 @@ body{margin:0;width: 1920px;}
 #search_p a{color:#666666;text-decoration: none;}
 #search_p a:hover{text-decoration: underline;}
 #shop_car{width:960px;height: 35px;margin: auto;}
-#shop_car p{margin:0 0 0 35px;color: #cccccc;float: left;}
+#shop_car_p{margin:0 0 0 35px;color: #cccccc;float: left;}
 #shop_car a{color:#565553;font-size: 12px;text-decoration: none;}
-#shop_car a:hover{text-decoration: underline;}
-#a_#336600:hover{color:#336600}
+#shop_car a:hover{text-decoration: underline;color:#336600;}
 #shop_car_right{float: right;width:348px;height:27px;position: relative;top:-7px;margin-right: 25px;background-image: url(./img/ind_carDivBg.gif);}
-#shop_car_title{width:130px;height: 100%;margin-left: 50px;margin-top: 1px;float: left;}
+#shop_car_title{width:130px;height: 100%;padding-left: 50px;margin-top: 1px;float: left;}
 #settlement{width:45px;height: 100%;float: left;margin-left: 35px;}
 #shop_car_list{float: left;height: 100%;margin-left: 35px;}
+#shop_car_content{float: left;width: 346px;background-color: white;position: relative;left: -50px;top: 5px;border: #cccccc 1px solid;border-top:0 ;border-radius: 10px;display: none;z-index: 1;}
+#shop_car_title:hover #shop_car_content{display: block;}
+#product_text{margin: 5px;width: 330px;height: 200px;}
+#price{color: red;margin:0;margin-left: 10px;float: left;}
+#del{float: right;margin-right: 20px;margin-bottom: 5px;}
+#del_all{float: right;margin-right: 20px;margin-bottom: 5px;}
 
 #ad{width: 1000px;margin:0 auto 5px auto;text-align: center;background: linear-gradient(#f7f7f7,#ffffff);}
 
