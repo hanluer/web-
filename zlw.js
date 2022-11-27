@@ -6,8 +6,8 @@ function now_time(){
     var hours = time.getHours();
     var minutes = time.getMinutes();
     var seconds = time.getSeconds();
-    var day = time.getDay()-1;
-    var Day = new Array('星期一','星期二','星期三','星期四','星期五','星期六','星期日');
+    var day = time.getDay();
+    var Day = new Array('星期日','星期一','星期二','星期三','星期四','星期五','星期六');
     if(hours<10){
         hours = '0' + hours;
     }
