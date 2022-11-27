@@ -428,28 +428,28 @@ function $(id){
     return document.getElementById(id);
 }
 function change1(){
-    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
-    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_1").style.backgroundImage = "url('./img/index_bg5_2.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('./img/index_bg5_1.png')";
 }
 function change2(){
-    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
-    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_1").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('./img/index_bg5_2.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('./img/index_bg5_1.png')";
 }
 function change3(){
-    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
-    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_1").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('./img/index_bg5_2.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('./img/index_bg5_1.png')";
 }
 function change4(){
-    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
-    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
+    $("middle_2_top_1").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('./img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('./img/index_bg5_2.png')";
 }
 function openlogin1(){
     document.getElementById("login1").style.display="block";
