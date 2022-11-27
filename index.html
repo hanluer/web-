@@ -11,45 +11,144 @@
         <div id="all">
             <div id="head">
                 <div id="logo">
-                    <a href="#2"><img src="./img/header_logonew.gif" id="header_logonew"></a>
+                    <a href="#"><img src="./img/header_logonew.gif" id="header_logonew"></a>
                     <div id="load">
                         <img id="spot" src="./img/spot.png">
                         <p id="load_p1">您好&nbsp&nbsp欢迎来到我买网购物！</p>
-                        <a id="load_a1" href="#2">[登录]</a>
-                        <a id="load_a2" href="#2">[注册]</a>
+                        <a id="load_a1" href="javascript:openlogin1();">[登录]</a>
+                        <a id="load_a2" href="javascript:openlogin2()">[注册]</a>
+                        <div id="login1">
+                            账&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login1_input1" type="text"><br>
+                            <p></p><br>
+                            密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login1_input2" type="text"><br>
+                            <p></p><br>
+                            <input type="button" id="login1_input4" value="确定" onclick="test1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="button" id="login1_input5" value="取消" onclick="closelogin1()">
+                        </div>
+                        <div id="loginbg"></div>
+                        <div id="login2">
+                            账&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input1" type="text"><br>
+                            <p></p><br>
+                            密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input2" type="text"><br>
+                            <p></p><br>
+                            密码验证:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input3" type="text"><br>
+                            <p></p><br>
+                            <input type="button" id="login2_input4" value="确定" onclick="test2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="button" id="login2_input5" value="取消" onclick="closelogin2()">
+                        </div>
+
+
                         <ul id="load_ul">
-                            <li><p>&nbsp<a href="#2">购物车</a>&nbsp&nbsp|</p></li>
-                            <li><p>&nbsp<a href="#2">网站地图</a>&nbsp&nbsp|</p></li>
-                            <li><p>&nbsp<a href="#2">快速购物</a>&nbsp&nbsp|</p></li>
-                            <li><p>&nbsp<a href="#2">实物购物券</a></p></li>
+                            <li><p>&nbsp<a href="#">购物车</a>&nbsp&nbsp|</p></li>
+                            <li><p>&nbsp<a href="#">网站地图</a>&nbsp&nbsp|</p></li>
+                            <li><p>&nbsp<a href="#">快速购物</a>&nbsp&nbsp|</p></li>
+                            <li id="show_a_box"><p>&nbsp<a href="#">实物购物券</a></p>
+                                <div id="showbox">
+                                    <p>请输入您的购物券号:</p>
+                                    <input type="text" style="width:120px" id="text"><br>
+                                    <hr color="#ddf3da">
+                                    <input type="button" value="确定" id="button"></input>
+                               </div>
+                            </li> 
                         </ul>
+
+
                         <img src="./img/header_car.gif" id="head_car">
                     </div>
                     <div id="introduction">
                         <p>世界500强企业&nbsp&nbsp中粮集团旗下食品购物网站</p>
                     </div>
-                    <div class="drop_menu" id="drop_menu1"><p>促销特惠&nbsp我买卡</p></div>
-                    <div class="drop_menu" id="drop_menu2"><p>办公室&nbsp健康厨房</p></div>
-                    <div class="drop_menu" id="drop_menu3"><p>绅士男人&nbsp宝贝最爱</p></div>
-                    <div class="drop_menu" id="drop_menu4"><p>中粮推荐&nbsp自然优选</p></div>
-                    <div class="drop_menu" id="drop_menu5"><p>美容养颜&nbsp提神醒脑</p></div>
+
+
+
+                    <div class="drop_menu" id="drop_menu1"><p>促销特惠&nbsp我买卡</p>
+                        <div class="drop_menu_second" id="drop_menu1_second">
+                            <img src="../中粮网/img/second1.png">
+                            <span id="menu1_second_p1">促销特惠</span><br>
+                            <span id="menu_second_p2">网上购物，首选特价！</span><br> 
+                            <span id="menu_second_p2">折扣专区，惊喜不断！</span><br> 
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu1_second_p1">我买卡</span><br>
+                            <span id="menu_second_p2">在我买网上购物，用我</span><br>
+                            <span id="menu_second_p2">买卡支付！购物灵活，</span><br>
+                            <span id="menu_second_p2">馈赠佳品。</span><br>
+                            <hr color="white">
+                        </div>
+                    </div>
+                    <div class="drop_menu" id="drop_menu2"><p>办公室&nbsp健康厨房</p>
+                        <div class="drop_menu_second" id="drop_menu2_second">
+                            <img src="../中粮网/img/second2.jpg">
+                            <span id="menu2_second_p1">办公室</span><br>
+                            <span id="menu_second_p2">办公室必备“装备”</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu2_second_p1">健康厨房</span><br>
+                            <span id="menu_second_p2">调出生活新滋味</span><br>
+                            <hr color="white">
+                        </div>
+                    </div>
+                    <div class="drop_menu" id="drop_menu3"><p>绅士男人&nbsp宝贝最爱</p>
+                        <div class="drop_menu_second" id="drop_menu3_second">
+                            <img src="../中粮网/img/second3.jpg">
+                            <span id="menu3_second_p1">绅士男人</span><br>
+                            <span id="menu_second_p2">男人最爱</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu3_second_p1">宝贝最爱</span><br>
+                            <span id="menu_second_p2">健康宝贝快长大！</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu3_second_p1">爱美女士</span><br>
+                            <span id="menu_second_p2">有健康才有美丽</span><br>
+                            <hr color="white">
+                        </div>
+                    </div>
+                    <div class="drop_menu" id="drop_menu4"><p>中粮推荐&nbsp自然优选</p>
+                        <div class="drop_menu_second" id="drop_menu4_second">
+                            <img src="../中粮网/img/second4.jpg">
+                            <span id="menu4_second_p1">中粮推荐</span><br>
+                            <span id="menu_second_p2">健康好味中粮诚意推荐</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu4_second_p1">自然优选</span><br>
+                            <span id="menu_second_p2">源头监控，健康有保障</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu4_second_p1">有机食品</span><br>
+                            <span id="menu_second_p2">有机栽种，营养更丰富</span><br>
+                            <hr color="white">
+                        </div>
+                    </div>
+                    <div class="drop_menu" id="drop_menu5"><p>美容养颜&nbsp提神醒脑</p>
+                        <div class="drop_menu_second" id="drop_menu5_second">
+                            <img src="../中粮网/img/second5.jpg">
+                            <span id="menu5_second_p1">美容养颜</span><br>
+                            <span id="menu_second_p2">美容养颜，内在调理</span><br>
+                            <hr color="lightgrey" width="96%" align="center">
+                            <span id="menu5_second_p1">提神醒脑</span><br>
+                            <span id="menu_second_p2">让您精力充沛，保持活力</span><br>
+                            <hr color="white">
+                        </div>
+                    </div>   
+
+
+
+
                 </div>
+
+
+
                 <div id="menu">
                     <ul>
-                        <li><p>&nbsp<a href="#2">休闲食品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">粮油</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">果汁饮料</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">饼干蛋糕</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">冲调品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">奶制品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">婴幼食品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">酒类</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">茶叶</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">调味品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">方便食品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">干货</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">早餐食品</a>&nbsp&nbsp|</p></li>
-                        <li><p>&nbsp<a href="#2">进口食品</a>&nbsp&nbsp</p></li>
+                        <li><p>&nbsp<a href="#">休闲食品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">粮油</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">果汁饮料</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">饼干蛋糕</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">冲调品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">奶制品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">婴幼食品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">酒类</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">茶叶</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">调味品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">方便食品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">干货</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">早餐食品</a>&nbsp&nbsp|</p></li>
+                        <li><p>&nbsp<a href="#">进口食品</a>&nbsp&nbsp</p></li>
                     </ul>
                 </div>
                 <div id="search">
@@ -71,306 +170,299 @@
                         <option>进口食品</option>
                     </select>
                     <input type="text">
-                    <a href="#2" id="simple_search"><img src="./img/header_seabtn.gif"></a>
-                    <a href="#2" id="high_search">高级搜索</a>
+                    <a href="#" id="simple_search"><img src="./img/header_seabtn.gif"></a>
+                    <a href="#" id="high_search">高级搜索</a>
                     <p id="search_p">热门关键词：&nbsp
-                        <a href="#2">调和油</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">巧克力</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">枣</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">大米</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">干果</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">咖啡</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">葡萄酒</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">奶粉</a>&nbsp&nbsp|&nbsp&nbsp
-                        <a href="#2">礼盒</a>&nbsp&nbsp|
+                        <a href="#">调和油</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">巧克力</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">枣</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">大米</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">干果</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">咖啡</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">葡萄酒</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">奶粉</a>&nbsp&nbsp|&nbsp&nbsp
+                        <a href="#">礼盒</a>&nbsp&nbsp|
                     </p>
                 </div>
                 <div id="shop_car">
-                    <p id="shop_car_p"> 
-                        <a href="#2">促销活动</a>&nbsp&nbsp|&nbsp
-                        <a href="#2">特价专区</a>&nbsp&nbsp|&nbsp
-                        <a href="#2">配送支付方式</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" id="a_red">【禁用面粉增白剂&nbsp中粮集团先行一步】</a>
+                    <p> 
+                        <a href="#">促销活动</a>&nbsp&nbsp|&nbsp
+                        <a href="#">特价专区</a>&nbsp&nbsp|&nbsp
+                        <a href="#">配送支付方式</a>&nbsp&nbsp|&nbsp
+                        <a href="#" id="a_red">【禁用面粉增白剂&nbsp中粮集团先行一步】</a>
                     </p>
                     <div id="shop_car_right">
                          <div id="shop_car_title">
-                            <a href="#2" id="product_number">购物车有0件商品</a>
-                            <div id="shop_car_content">
-                                <select id="product_text" size="10">
-                                </select>
-                                <p id="price">商品总价为：</p>
-                                <input type="button" id="del_all" value="清空" onclick="del_all()">
-                                <input type="button" id="del" value="删除" onclick="del()">
-                            </div>
+                            <a href="#">购物车有0件商品</a>
                          </div>
                          <div id="settlement">
-                            <a href="#2">去结算</a>
+                            <a href="#">去结算</a>
                          </div>
                          <div id="shop_car_list">
-                            <a href="#2">购物车</a>
+                            <a href="#">购物车</a>
                          </div>
                     </div>
                 </div>
             </div>
 
             <div id="ad">
-                <a href="#2"><img src="./img/20110421103628224.jpg"></a>
+                <a href="#"><img src="./img/20110421103628224.jpg"></a>
             </div>
 
             <div id="left_sort">
                 <div id="left_sort1"><img src="./img/index_bg1.png"></div>
                 <div class="left_sort_all" id="left_sort2">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">休闲食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">休闲食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">礼盒荟萃</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">特产大枣</a><br>
-                        <a href="#2" class="left_sort_all_a">膨化食品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">蜜饯果脯</a><br>
-                        <a href="#2" class="left_sort_all_a">海味零食</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">肉脯肉松</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">干果</a><br>
-                        <a href="#2" class="left_sort_all_a">豆类零食</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">口香糖</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">糖果</a><br>
-                        <a href="#2" class="left_sort_all_a">果冻/龟苓膏</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">巧克力</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">小吃</a>
+                        <a href="#" class="left_sort_all_a">礼盒荟萃</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">特产大枣</a><br>
+                        <a href="#" class="left_sort_all_a">膨化食品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">蜜饯果脯</a><br>
+                        <a href="#" class="left_sort_all_a">海味零食</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">肉脯肉松</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">干果</a><br>
+                        <a href="#" class="left_sort_all_a">豆类零食</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">口香糖</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">糖果</a><br>
+                        <a href="#" class="left_sort_all_a">果冻/龟苓膏</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">巧克力</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">小吃</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort3">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">粮油</p></a>
+                    <a href="#"><p class="left_sort_all_h">粮油</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">食用油</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">大米</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">杂粮</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">面条</a><br>
-                        <a href="#2" class="left_sort_all_a">面粉/发酵粉</a>
+                        <a href="#" class="left_sort_all_a">食用油</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">大米</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">杂粮</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">面条</a><br>
+                        <a href="#" class="left_sort_all_a">面粉/发酵粉</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort4">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">果汁饮料</p></a>
+                    <a href="#"><p class="left_sort_all_h">果汁饮料</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">酸梅汤</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">蛋白饮料</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">乳酸饮料</a><br>
-                        <a href="#2" class="left_sort_all_a">碳酸饮料</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">饮用水</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">茶饮料</a><br>
-                        <a href="#2" class="left_sort_all_a">功能饮料</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">果汁/蔬菜汁</a><br>
-                        <a href="#2" class="left_sort_all_a">咖啡饮料</a>
+                        <a href="#" class="left_sort_all_a">酸梅汤</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">蛋白饮料</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">乳酸饮料</a><br>
+                        <a href="#" class="left_sort_all_a">碳酸饮料</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">饮用水</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">茶饮料</a><br>
+                        <a href="#" class="left_sort_all_a">功能饮料</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">果汁/蔬菜汁</a><br>
+                        <a href="#" class="left_sort_all_a">咖啡饮料</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort5">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">饼干蛋糕</p></a>
+                    <a href="#"><p class="left_sort_all_h">饼干蛋糕</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">传统食品</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">饼干</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">曲奇</a><br>
-                        <a href="#2" class="left_sort_all_a">威化/西点</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">沙琪玛</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">蛋糕/派</a><br>
-                        <a href="#2" class="left_sort_all_a">中式糕点</a>
+                        <a href="#" class="left_sort_all_a">传统食品</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">饼干</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">曲奇</a><br>
+                        <a href="#" class="left_sort_all_a">威化/西点</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">沙琪玛</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">蛋糕/派</a><br>
+                        <a href="#" class="left_sort_all_a">中式糕点</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort6">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">冲调品</p></a>
+                    <a href="#"><p class="left_sort_all_h">冲调品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">布丁粉</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">礼盒荟萃</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">成人奶粉</a><br>
-                        <a href="#2" class="left_sort_all_a">果味冲调品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">糊状冲调品</a><br>
-                        <a href="#2" class="left_sort_all_a">蜂蜜/柚子茶</a><br>
-                        <a href="#2" class="left_sort_all_a">咖啡/奶茶/巧克力</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">姜汤</a>
+                        <a href="#" class="left_sort_all_a">布丁粉</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">礼盒荟萃</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">成人奶粉</a><br>
+                        <a href="#" class="left_sort_all_a">果味冲调品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">糊状冲调品</a><br>
+                        <a href="#" class="left_sort_all_a">蜂蜜/柚子茶</a><br>
+                        <a href="#" class="left_sort_all_a">咖啡/奶茶/巧克力</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">姜汤</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort7">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">奶制品</p></a>
+                    <a href="#"><p class="left_sort_all_h">奶制品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">奶粉</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">奶片</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">常温奶</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">豆奶</a><br>
-                        <a href="#2" class="left_sort_all_a">乳酸饮料</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">奶酪/芝士</a>
+                        <a href="#" class="left_sort_all_a">奶粉</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">奶片</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">常温奶</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">豆奶</a><br>
+                        <a href="#" class="left_sort_all_a">乳酸饮料</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">奶酪/芝士</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort8">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">婴幼食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">婴幼食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">奶粉</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">辅食</a>
+                        <a href="#" class="left_sort_all_a">奶粉</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">辅食</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort9">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">酒类</p></a>
+                    <a href="#"><p class="left_sort_all_h">酒类</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">米酒</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">白酒</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">啤酒</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">葡萄酒</a><br>
-                        <a href="#2" class="left_sort_all_a">洋酒</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">黄酒</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">果酒</a>
+                        <a href="#" class="left_sort_all_a">米酒</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">白酒</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">啤酒</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">葡萄酒</a><br>
+                        <a href="#" class="left_sort_all_a">洋酒</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">黄酒</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">果酒</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort10">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">茶叶</p></a>
+                    <a href="#"><p class="left_sort_all_h">茶叶</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">绿茶</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">礼盒荟萃</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">花茶</a><br>
-                        <a href="#2" class="left_sort_all_a">花草茶</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">红茶</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">普洱茶/黑茶</a><br>
-                        <a href="#2" class="left_sort_all_a">乌龙茶/铁观音</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">袋泡茶</a>
+                        <a href="#" class="left_sort_all_a">绿茶</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">礼盒荟萃</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">花茶</a><br>
+                        <a href="#" class="left_sort_all_a">花草茶</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">红茶</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">普洱茶/黑茶</a><br>
+                        <a href="#" class="left_sort_all_a">乌龙茶/铁观音</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">袋泡茶</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort11">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">调味品</p></a>
+                    <a href="#"><p class="left_sort_all_h">调味品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">泡打粉</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">蛋糕粉</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">调味酱</a><br>
-                        <a href="#2" class="left_sort_all_a">酱油</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">醋</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">腐乳</a>&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">味精/鸡精</a><br>
-                        <a href="#2" class="left_sort_all_a">酱菜</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">咖喱</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">香辛料</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">料酒</a><br>
-                        <a href="#2" class="left_sort_all_a">香油/麻油</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">盐/糖</a><br>
-                        <a href="#2" class="left_sort_all_a">色拉酱/千岛酱</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">火锅调料</a><br>
-                        <a href="#2" class="left_sort_all_a">蚝油</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">调味汁/粉</a><br>
+                        <a href="#" class="left_sort_all_a">泡打粉</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">蛋糕粉</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">调味酱</a><br>
+                        <a href="#" class="left_sort_all_a">酱油</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">醋</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">腐乳</a>&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">味精/鸡精</a><br>
+                        <a href="#" class="left_sort_all_a">酱菜</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">咖喱</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">香辛料</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">料酒</a><br>
+                        <a href="#" class="left_sort_all_a">香油/麻油</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">盐/糖</a><br>
+                        <a href="#" class="left_sort_all_a">色拉酱/千岛酱</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">火锅调料</a><br>
+                        <a href="#" class="left_sort_all_a">蚝油</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">调味汁/粉</a><br>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort12">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">方便食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">方便食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">方便汤料</a>&nbsp|
-                        <a href="#2" class="left_sort_all_a">方便面</a>&nbsp|
-                        <a href="#2" class="left_sort_all_a">方便粉丝</a><br>
-                        <a href="#2" class="left_sort_all_a">八宝粥</a>&nbsp|
-                        <a href="#2" class="left_sort_all_a">方便粥</a>&nbsp|
-                        <a href="#2" class="left_sort_all_a">罐头</a>&nbsp|
-                        <a href="#2" class="left_sort_all_a">酱菜</a>
+                        <a href="#" class="left_sort_all_a">方便汤料</a>&nbsp|
+                        <a href="#" class="left_sort_all_a">方便面</a>&nbsp|
+                        <a href="#" class="left_sort_all_a">方便粉丝</a><br>
+                        <a href="#" class="left_sort_all_a">八宝粥</a>&nbsp|
+                        <a href="#" class="left_sort_all_a">方便粥</a>&nbsp|
+                        <a href="#" class="left_sort_all_a">罐头</a>&nbsp|
+                        <a href="#" class="left_sort_all_a">酱菜</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort13">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">干货</p></a>
+                    <a href="#"><p class="left_sort_all_h">干货</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">土特产</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">木耳/银耳</a><br>
-                        <a href="#2" class="left_sort_all_a">菌类/香菇</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">干海产品</a><br>
-                        <a href="#2" class="left_sort_all_a">粉丝/腐竹/黄花菜</a>
+                        <a href="#" class="left_sort_all_a">土特产</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">木耳/银耳</a><br>
+                        <a href="#" class="left_sort_all_a">菌类/香菇</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">干海产品</a><br>
+                        <a href="#" class="left_sort_all_a">粉丝/腐竹/黄花菜</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort14">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">早餐食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">早餐食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">果酱</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">花生酱/巧克力酱</a><br>
-                        <a href="#2" class="left_sort_all_a">麦片</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">早餐玉米片</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">咖啡</a><br>
-                        <a href="#2" class="left_sort_all_a">糊状冲调品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">蜂蜜</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">常温奶</a><br>
-                        <a href="#2" class="left_sort_all_a">小面包</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">豆奶</a>
+                        <a href="#" class="left_sort_all_a">果酱</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">花生酱/巧克力酱</a><br>
+                        <a href="#" class="left_sort_all_a">麦片</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">早餐玉米片</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">咖啡</a><br>
+                        <a href="#" class="left_sort_all_a">糊状冲调品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">蜂蜜</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">常温奶</a><br>
+                        <a href="#" class="left_sort_all_a">小面包</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">豆奶</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort15">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">进口食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">进口食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">饼干蛋糕</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">饮品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">巧克力</a><br>
-                        <a href="#2" class="left_sort_all_a">零食</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">冲调品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">油</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">酒</a><br>
-                        <a href="#2" class="left_sort_all_a">干果果脯</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">糖果</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">麦片</a><br>
-                        <a href="#2" class="left_sort_all_a">婴幼食品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">主食</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">调味品</a><br>
-                        <a href="#2" class="left_sort_all_a">保健品</a>
+                        <a href="#" class="left_sort_all_a">饼干蛋糕</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">饮品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">巧克力</a><br>
+                        <a href="#" class="left_sort_all_a">零食</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">冲调品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">油</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">酒</a><br>
+                        <a href="#" class="left_sort_all_a">干果果脯</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">糖果</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">麦片</a><br>
+                        <a href="#" class="left_sort_all_a">婴幼食品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">主食</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">调味品</a><br>
+                        <a href="#" class="left_sort_all_a">保健品</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort16">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">健康食品</p></a>
+                    <a href="#"><p class="left_sort_all_h">健康食品</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">营养品</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">免疫抗疲劳</a><br>
-                        <a href="#2" class="left_sort_all_a">补血保健</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">美容养颜</a><br>
-                        <a href="#2" class="left_sort_all_a">补钙保健</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">补肾保健</a><br>
-                        <a href="#2" class="left_sort_all_a">男士健康保健</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">保健品礼盒</a><br>
-                        <a href="#2" class="left_sort_all_a">减肥瘦身</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">维生素类</a><br>
-                        <a href="#2" class="left_sort_all_a">健脑营养</a>
+                        <a href="#" class="left_sort_all_a">营养品</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">免疫抗疲劳</a><br>
+                        <a href="#" class="left_sort_all_a">补血保健</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">美容养颜</a><br>
+                        <a href="#" class="left_sort_all_a">补钙保健</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">补肾保健</a><br>
+                        <a href="#" class="left_sort_all_a">男士健康保健</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">保健品礼盒</a><br>
+                        <a href="#" class="left_sort_all_a">减肥瘦身</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">维生素类</a><br>
+                        <a href="#" class="left_sort_all_a">健脑营养</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort17">
                     <img class="left_sort_all_img" src="./img/index_bg2.png" >
-                    <a href="#2"><p class="left_sort_all_h">果蔬生鲜</p></a>
+                    <a href="#"><p class="left_sort_all_h">果蔬生鲜</p></a>
                     <p class="left_sort_all_p">
-                        <a href="#2" class="left_sort_all_a">面包甜品卡</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">肉类礼品卡</a><br>
-                        <a href="#2" class="left_sort_all_a">月饼</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">水果礼品卡</a><br>
-                        <a href="#2" class="left_sort_all_a">蔬菜礼品卡</a>&nbsp&nbsp|&nbsp
-                        <a href="#2" class="left_sort_all_a">果蔬生鲜</a><br>
-                        <a href="#2" class="left_sort_all_a">海鲜礼品卡</a>
+                        <a href="#" class="left_sort_all_a">面包甜品卡</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">肉类礼品卡</a><br>
+                        <a href="#" class="left_sort_all_a">月饼</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">水果礼品卡</a><br>
+                        <a href="#" class="left_sort_all_a">蔬菜礼品卡</a>&nbsp&nbsp|&nbsp
+                        <a href="#" class="left_sort_all_a">果蔬生鲜</a><br>
+                        <a href="#" class="left_sort_all_a">海鲜礼品卡</a>
                     </p>
                 </div>
                 <div class="left_sort_all" id="left_sort18">
-                    <p id="left_sort18_p"><a href="#2">查看所有分类>></a></p>
+                    <p id="left_sort18_p"><a href="#">查看所有分类>></a></p>
                 </div>                
             </div>
 
             <div id="middle">
                 <div id="middle_1">
-                    <a href="#2"><img src="./img/focus.jpg"></a>
+                    <a href="#"><img src="./img/focus.jpg"></a>
                 </div>
                 <div id="middle_2">
                     <div id="middle_2_top">
-                        <div id="middle_2_top_1"><a href="#2" id="middle_2_top_1a">热卖商品</a></div>
-                        <div id="middle_2_top_2"><a href="#2" id="middle_2_top_2a">本周推荐</a></div>
-                        <div id="middle_2_top_3"><a href="#2" id="middle_2_top_3a">超值低价</a></div>
-                        <div id="middle_2_top_4"><a href="#2" id="middle_2_top_4a">美容养颜</a></div>
+                        <div id="middle_2_top_1" onclick="change1()"><a href="#" id="middle_2_top_1a">热卖商品</a></div>
+                        <div id="middle_2_top_2" onclick="change2()"><a href="#" id="middle_2_top_2a">本周推荐</a></div>
+                        <div id="middle_2_top_3" onclick="change3()"><a href="#" id="middle_2_top_3a">超值低价</a></div>
+                        <div id="middle_2_top_4" onclick="change4()"><a href="#" id="middle_2_top_4a">美容养颜</a></div>
                     </div>
                     <div id="middle_2_bottom">
-                        <div id="middle_2_bottom_1"><a href="#2" onclick="result('p1')"><img src="./img/2011041503082913.jpg"></a></div>
-                        <div id="middle_2_bottom_2"><a href="#2" onclick="result('p2')"><img src="./img/20110418120001604.jpg"></a></div>
-                        <div id="middle_2_bottom_3"><a href="#2" onclick="result('p3')"><img src="./img/20110418120927922.jpg"></a></div>
+                        <div id="middle_2_bottom_1"><a href="#"><img src="./img/2011041503082913.jpg"></a></div>
+                        <div id="middle_2_bottom_2"><a href="#"><img src="./img/20110418120001604.jpg"></a></div>
+                        <div id="middle_2_bottom_3"><a href="#"><img src="./img/20110418120927922.jpg"></a></div>
                     </div>
                 </div>
             </div>
@@ -381,63 +473,63 @@
             </div>
             <div id="right_2">
                 <div id="right_2bg">
-                    <a href="#2" id="right_2_a1">更多>></a>
+                    <a href="#" id="right_2_a1">更多>></a>
                 </div>
                 <div id="right_2_1">
-                    <a href="#2"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
-                    <a href="#2"><p class="right_2_ps">我买网购物/优惠券使用说明</p></a>
+                    <a href="#"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
+                    <a href="#"><p class="right_2_ps">我买网购物/优惠券使用说明</p></a>
                     <br>
-                    <a href="#2"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
-                    <a href="#2"><p class="right_2_ps">【实物与图片差异的说明】</p></a>
+                    <a href="#"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
+                    <a href="#"><p class="right_2_ps">【实物与图片差异的说明】</p></a>
                     <br>
-                    <a href="#2"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
-                    <a href="#2"><p class="right_2_ps">本档活动正在进行中，震撼低价！</p></a>
+                    <a href="#"><img src="./img/index_bg4.png" class="right_2_imgs"></a>
+                    <a href="#"><p class="right_2_ps">本档活动正在进行中，震撼低价！</p></a>
                     <br>
-                    <a href="#2"><img src="./img/20110322114620400.jpg" id="zhuanqu"></a>
+                    <a href="#"><img src="./img/20110322114620400.jpg" id="zhuanqu"></a>
                 </div>
             </div>
             <div id="right_3">
                 <div id="right_3_1"><img src="./img/index_bg6.png"></div>
-                <div class="right_3_2"><a href="#2" onclick="result('p4')"><img src="./img/77714_1_pic60_9960.JPG"></a><p class="right_3_2_p"><a href="#2" onclick="result('p4')">美滋滋酸橙味夹心果汁软糖（罐装200g）</a></p></div>
-                <div class="right_3_2"><a href="#2" onclick="result('p5')"><img src="./img/500902_1_pic60_860.JPG"></a><p class="right_3_2_p"><a href="#2" onclick="result('p5')">博斯特珍藏干红葡萄酒2007(Chevalier Jouto…</a></p></div>
-                <div class="right_3_2"><a href="#2" onclick="result('p6')"><img src="./img/500720_1_pic60_8773.JPG"></a><p class="right_3_2_p"><a href="#2" onclick="result('p6')">露菲尔奇峰美乐干红葡萄酒2007(Mont Jerome…</a></p></div>
+                <div class="right_3_2"><a href="#"><img src="./img/77714_1_pic60_9960.JPG"></a><p class="right_3_2_p"><a href="#">美滋滋酸橙味夹心果汁软糖（罐装200g）</a></p></div>
+                <div class="right_3_2"><a href="#"><img src="./img/500902_1_pic60_860.JPG"></a><p class="right_3_2_p"><a href="#">美滋滋酸橙味夹心果汁软糖（罐装200g）</a></p></div>
+                <div class="right_3_2"><a href="#"><img src="./img/500720_1_pic60_8773.JPG"></a><p class="right_3_2_p"><a href="#">美滋滋酸橙味夹心果汁软糖（罐装200g）</a></p></div>
             </div>
 
             <div id="special_offer">
-               <div id="special_offer_logo"><img id="jiantou" src="./img/jiantou.png"><a href="#2"><p>更多特价商品>></p></a></div>
+               <div id="special_offer_logo"><img id="jiantou" src="./img/jiantou.png"><a href="#"><p>更多特价商品>></p></a></div>
                <div id="special_offer_img">
-                    <div id="special_offer_img1" class="special_offer_imgs"><a href="#2" onclick="result('p7')"><img class="special_offerimg" src="./img/64743_1_pic100_9013.JPG"></a><a href="#2" onclick="result('p7')"><p>优之良品五粮素食元气100%棒（蛋黄 袋装 180g）</p></a></div>
-                    <div id="special_offer_img2" class="special_offer_imgs"><a href="#2" onclick="result('p8')"><img class="special_offerimg" src="./img/68423_1_pic100_8824.JPG"></a><a href="#2" onclick="result('p8')"><p>利乐多卡尔麦里新疆珍珠枣（佳品装400g）</p></a></div>
-                    <div id="special_offer_img3" class="special_offer_imgs"><a href="#2" onclick="result('p9')"><img class="special_offerimg" src="./img/66407_1_pic100_462.JPG"></a><a href="#2" onclick="result('p9')"><p>越南Tipo鸡蛋奶油面包干（超大装 300g）</p></a></div>
-                    <div id="special_offer_img4" class="special_offer_imgs"><a href="#2" onclick="result('p10')"><img class="special_offerimg" src="./img/500902_1_pic60_860.JPG"></a><a href="#2" onclick="result('p10')"><p>威特马凯解百纳特选干红（Custer Weitmamkal,VDT）（瓶装750ml）</p></a></div>
-                    <div id="special_offer_img5" class="special_offer_imgs"><a href="#2" onclick="result('p11')"><img class="special_offerimg" src="./img/67309_1_pic100_4596.JPG"></a><a href="#2" onclick="result('p11')"><p>悦活缤纷随行果蔬燕麦片（纯净白 单杯装 40g）</p></a></div>
+                    <div id="special_offer_img1" class="special_offer_imgs"><a href="#"><img class="special_offerimg" src="./img/64743_1_pic100_9013.JPG"></a><a href="#"><p>优之良品五粮素食元气100%棒（蛋黄 袋装 180g）</p></a></div>
+                    <div id="special_offer_img2" class="special_offer_imgs"><a href="#"><img class="special_offerimg" src="./img/68423_1_pic100_8824.JPG"></a><a href="#"><p>利乐多卡尔麦里新疆珍珠枣（佳品装400g）</p></a></div>
+                    <div id="special_offer_img3" class="special_offer_imgs"><a href="#"><img class="special_offerimg" src="./img/66407_1_pic100_462.JPG"></a><a href="#"><p>越南Tipo鸡蛋奶油面包干（超大装 300g）</p></a></div>
+                    <div id="special_offer_img4" class="special_offer_imgs"><a href="#"><img class="special_offerimg" src="./img/500902_1_pic60_860.JPG"></a><a href="#"><p>威特马凯解百纳特选干红（Custer Weitmamkal,VDT）（瓶装750ml）</p></a></div>
+                    <div id="special_offer_img5" class="special_offer_imgs"><a href="#"><img class="special_offerimg" src="./img/67309_1_pic100_4596.JPG"></a><a href="#"><p>悦活缤纷随行果蔬燕麦片（纯净白 单杯装 40g）</p></a></div>
                     <div id="special_offer_passage">
                         <div id="special_offer_passage_left">
-                            <a href="#2"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>买休闲食品、零食？去休闲食品专题</p></a><br>
-                            <a href="#2"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>中粮我买网让您放心的网上购物网站</p></a><br>
-                            <a href="#2"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>我买网最新会员专刊《买食汇》，最新促销+时尚资讯全都有！</p></a>
+                            <a href="#"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>买休闲食品、零食？去休闲食品专题</p></a><br>
+                            <a href="#"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>中粮我买网让您放心的网上购物网站</p></a><br>
+                            <a href="#"><img src="./img/jiantou.png" class="special_offer_jiantous"><p>我买网最新会员专刊《买食汇》，最新促销+时尚资讯全都有！</p></a>
                         </div>
                         <div id="special_offer_passage_right">
-                            <a href="#2"><img src="./img/20110330024418329.jpg" id="special_offer_zhuanjia"></a>
+                            <a href="#"><img src="./img/20110330024418329.jpg" id="special_offer_zhuanjia"></a>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div id="good_product">
-                <div id="good_product_img1"><a href="#2" onclick="result('p12')"><img src="./img/20110419054815586.jpg"></a></div>
-                <div id="good_product_img2"><a href="#2" onclick="result('p13')"><img src="./img/20110419054827155.jpg"></a></div>
-                <div id="good_product_img3"><a href="#2" onclick="result('p14')"><img src="./img/20110419054840966.jpg"></a></div>
+                <div id="good_product_img1"><a href="#"><img src="./img/20110419054815586.jpg"></a></div>
+                <div id="good_product_img2"><a href="#"><img src="./img/20110419054827155.jpg"></a></div>
+                <div id="good_product_img3"><a href="#"><img src="./img/20110419054840966.jpg"></a></div>
                 <div id="good_product_content">
                     <div id="good_product_logo"><img src="./img/good_product_logo.png"></div>
                     <ul>
-                        <li><a href="#2" onclick="result('p15')"><p>盛香珍蒜香青豆(袋装 240g)</p></a></li>
-                        <li><a href="#2" onclick="result('p16')"><p>7D芒果干(进口食品 袋装 100g)</p></a></li>
-                        <li><a href="#2" onclick="result('p17')"><p>越南Tipo鸡蛋奶油面包干(超大装 300g)</p></a></li>
-                        <li><a href="#2" onclick="result('p18')"><p>雀巢(42+6)条特惠装咖啡(盒装 13g*48)</p></a></li>
-                        <li><a href="#2" onclick="result('p19')"><p>黄飞红麻辣花生(袋装 210g)</p></a></li>
+                        <li><a href="#"><p>盛香珍蒜香青豆(袋装 240g)</p></a></li>
+                        <li><a href="#"><p>7D芒果干(进口食品 袋装 100g)</p></a></li>
+                        <li><a href="#"><p>越南Tipo鸡蛋奶油面包干(超大装 300g)</p></a></li>
+                        <li><a href="#"><p>雀巢(42+6)条特惠装咖啡(盒装 13g*48)</p></a></li>
+                        <li><a href="#"><p>黄飞红麻辣花生(袋装 210g)</p></a></li>
                     </ul>
-                    <div id="good_product_img4"><a href="#2" onclick="result('p20')"><img src="./img/20110419044751390.jpg"></a></div>
+                    <div id="good_product_img4"><a href="#"><img src="./img/20110419044751390.jpg"></a></div>
                 </div>
             </div>
 
@@ -446,32 +538,32 @@
                 <div id="new_product_content">
                     <div id="new_product_left">
                         <div id="new_product_imgs1">
-                            <div class="new_product_imgs1"><a href="#2" onclick="result('p21')"><img src="./img/501556_1_pic100_3833.JPG"></a><a href="#2" onclick="result('p21')"><p>国宾朵朵舞日式什锦珍菌滋养汤(杯装 10g)</p></a></div>
-                            <div class="new_product_imgs1"><a href="#2" onclick="result('p22')"><img src="./img/501236_1_pic100_4353.jpg"></a><a href="#2" onclick="result('p22')"><p>六必居甜酱八宝菜(瓶装 290g)</p></a></div>
-                            <div class="new_product_imgs1"><a href="#2" onclick="result('p23')"><img src="./img/501730_1_pic100_1158.JPG"></a><a href="#2" onclick="result('p23')"><p>华鹏珍豆真逗(盒装 225g)</p></a></div>
-                            <div class="new_product_imgs1"><a href="#2" onclick="result('p24')"><img src="./img/76361_1_pic100_8327.JPG"></a><a href="#2" onclick="result('p24')"><p>万味轩脆口肉干辣味(袋装 35g)</p></a></div>
+                            <div class="new_product_imgs1"><a href="#"><img src="./img/501556_1_pic100_3833.JPG"></a><a href="#"><p>国宾朵朵舞日式什锦珍菌滋养汤(杯装 10g)</p></a></div>
+                            <div class="new_product_imgs1"><a href="#"><img src="./img/501236_1_pic100_4353.jpg"></a><a href="#"><p>六必居甜酱八宝菜(瓶装 290g)</p></a></div>
+                            <div class="new_product_imgs1"><a href="#"><img src="./img/501730_1_pic100_1158.JPG"></a><a href="#"><p>华鹏珍豆真逗(盒装 225g)</p></a></div>
+                            <div class="new_product_imgs1"><a href="#"><img src="./img/76361_1_pic100_8327.JPG"></a><a href="#"><p>万味轩脆口肉干辣味(袋装 35g)</p></a></div>
                         </div>
                         <div id="new_product_imgs2">
-                            <div class="new_product_imgs2"><a href="#2" onclick="result('p25')"><img src="./img/500624_1_pic60_9322.jpg"></a></div>
-                            <div class="new_product_p"><a href="#2" onclick="result('p25')"><p>鸿津元气100自然烘焙五谷棒(牛乳袋装 185g)</p></a></div>
-                            <div class="new_product_imgs2"><a href="#2" onclick="result('p26')"><img src="./img/77715_1_pic60_6367.JPG"></a></div>
-                            <div class="new_product_p"><a href="#2" onclick="result('p26')"><p>好沃德脱脂牛奶(盒装 1L)</p></a></div>
-                            <div class="new_product_imgs2"><a href="#2" onclick="result('p27')"><img src="./img/501724_1_pic60_800.JPG"></a></div>
-                            <div class="new_product_p"><a href="#2" onclick="result('p27')"><p>华鹏红豆沙(袋装 500g)</p></a></div>
+                            <div class="new_product_imgs2"><a href="#"><img src="./img/500624_1_pic60_9322.jpg"></a></div>
+                            <div class="new_product_p"><a href="#"><p>鸿津元气100自然烘焙五谷棒(牛乳袋装 185g)</p></a></div>
+                            <div class="new_product_imgs2"><a href="#"><img src="./img/77715_1_pic60_6367.JPG"></a></div>
+                            <div class="new_product_p"><a href="#"><p>好沃德脱脂牛奶(盒装 1L)</p></a></div>
+                            <div class="new_product_imgs2"><a href="#"><img src="./img/501724_1_pic60_800.JPG"></a></div>
+                            <div class="new_product_p"><a href="#"><p>华鹏红豆沙(袋装 500g)</p></a></div>
                         </div>
                     </div>
                     <div id="new_product_right">
                         <div id="new_product_imgs3">
-                            <a href="#2" onclick="result('p28')"><img src="./img/2011042001362036.jpg"></a>
+                            <a href="#"><img src="./img/2011042001362036.jpg"></a>
                         </div>
                         <div id="new_product_imgs4">
                             <div id="new_product_imgs4_1">
-                                <div class="new_product_imgs4_img"><a href="#2" onclick="result('p29')"><img src="./img/80422_1_pic60_9774.JPG"></a></div>
-                                <div class="new_product_imgs4_p"><a href="#2" onclick="result('p29')"><p>明治熊猫奶油夹心饼干(进口食品 盒装 260g)</p></a></div>
+                                <div class="new_product_imgs4_img"><a href="#"><img src="./img/80422_1_pic60_9774.JPG"></a></div>
+                                <div class="new_product_imgs4_p"><a href="#"><p>明治熊猫奶油夹心饼干(进口食品 盒装 260g)</p></a></div>
                             </div>
                             <div id="new_product_imgs4_2">
-                                <div class="new_product_imgs4_img"><a href="#2" onclick="result('p30')"><img src="./img/500766_1_pic60_1077.JPG"></a></div>
-                                <div class="new_product_imgs4_p"><a href="#2" onclick="result('p30')"><p>澳大利亚小马宝莉饼干(袋装 250g)</p></a></div>
+                                <div class="new_product_imgs4_img"><a href="#"><img src="./img/500766_1_pic60_1077.JPG"></a></div>
+                                <div class="new_product_imgs4_p"><a href="#"><p>澳大利亚小马宝莉饼干(袋装 250g)</p></a></div>
                             </div>
                         </div>
                     </div>
@@ -503,64 +595,64 @@
                 <div id="snack_food_logo">
                     <p id="snack_food_p1">休闲食品</p>
                     <ul>
-                        <li type="none"><p class="snack_food_p2"><a href="#2">肉脯肉松</a>｜</p></li>
-                        <li type="none"><p class="snack_food_p2"><a href="#2">海味零食</a>｜</p></li>
-                        <li type="none"><p class="snack_food_p2"><a href="#2">特产大枣</a>｜</p></li>
-                        <li type="none"><p class="snack_food_p2"><a href="#2">糖果</a>｜</p></li>  
-                        <li type="none"><p class="snack_food_p2"><a href="#2">膨化食品</a>｜</p></li>  
-                        <li type="none"><p class="snack_food_p2"><a href="#2">巧克力</a>｜</p></li>  
-                        <li type="none"><p class="snack_food_p2"><a href="#2">干果</a>｜</p></li> 
-                        <li type="none"><p class="snack_food_p2"><a href="#2">进口休闲</a></p></li>
+                        <li type="none"><p class="snack_food_p2"><a href="#">肉脯肉松</a>｜</p></li>
+                        <li type="none"><p class="snack_food_p2"><a href="#">海味零食</a>｜</p></li>
+                        <li type="none"><p class="snack_food_p2"><a href="#">特产大枣</a>｜</p></li>
+                        <li type="none"><p class="snack_food_p2"><a href="#">糖果</a>｜</p></li>  
+                        <li type="none"><p class="snack_food_p2"><a href="#">膨化食品</a>｜</p></li>  
+                        <li type="none"><p class="snack_food_p2"><a href="#">巧克力</a>｜</p></li>  
+                        <li type="none"><p class="snack_food_p2"><a href="#">干果</a>｜</p></li> 
+                        <li type="none"><p class="snack_food_p2"><a href="#">进口休闲</a></p></li>
                     </ul>
-                    <a href="#2"><p id="snack_food_p3">更多>></p></a>
+                    <a href="#"><p id="snack_food_p3">更多>></p></a>
                 </div>
                 <div id="snack_food_content">
                     <div id="snack_food_left">
-                        <a href="#2" onclick="result('p31')"><img src="./img/20110420015720108.jpg"></a>
+                        <a href="#"><img src="./img/20110420015720108.jpg"></a>
                     </div>
                     <div id="snack_food_middle">
                         <div id="snack_food_middle_1">
                             <div class="snack_food_middle_div">
-                                <div class="snack_food_middle_imgs"><a href="#2" onclick="result('p32')"><img src="./img/64743_1_pic100_9013.JPG"></a></div>
+                                <div class="snack_food_middle_imgs"><a href="#"><img src="./img/64743_1_pic100_9013.JPG"></a></div>
                                 <div class="snack_food_middle_ps">
-                                    <a href="#2" onclick="result('p32')"><p class="snack_food_middle_p1">优之良品五粮素食元</p></a>
+                                    <a href="#"><p class="snack_food_middle_p1">优之良品五粮素食元</p></a>
                                     <p class="snack_food_middle_p2">商品特点 香港原产地生产，质量保证</p>
                                 </div>
                             </div>
                             <div class="snack_food_middle_div">
-                                <div class="snack_food_middle_imgs"><a href="#2" onclick="result('p33')"><img src="./img/59545_1_pic100_2366.JPG"></a></div>
+                                <div class="snack_food_middle_imgs"><a href="#"><img src="./img/59545_1_pic100_2366.JPG"></a></div>
                                 <div class="snack_food_middle_ps">
-                                    <a href="#2" onclick="result('p33')"><p class="snack_food_middle_p1">米老头蛋黄煎饼(牛奶</p></a>
+                                    <a href="#"><p class="snack_food_middle_p1">米老头蛋黄煎饼(牛奶</p></a>
                                     <p class="snack_food_middle_p2">商品特点 香甜酥脆</p>
                                 </div>
                             </div>
                         </div>
                         <div id="snack_food_middle_2">
                             <div class="snack_food_middle_div">
-                                <div class="snack_food_middle_imgs"><a href="#2" onclick="result('p34')"><img src="./img/63842_1_pic100_363.JPG"></a></div>
+                                <div class="snack_food_middle_imgs"><a href="#"><img src="./img/63842_1_pic100_363.JPG"></a></div>
                                 <div class="snack_food_middle_ps">
-                                    <a href="#2" onclick="result('p34')"><p class="snack_food_middle_p1">盛香珍蒜香青豆(袋装 240g)</p></a>
+                                    <a href="#"><p class="snack_food_middle_p1">盛香珍蒜香青豆(袋装 240g)</p></a>
                                     <p class="snack_food_middle_p2">此产品自登录我买网以来，非常热销，已</p>
                                 </div>
                             </div>
                             <div class="snack_food_middle_div">
-                                <div class="snack_food_middle_imgs"><a href="#2" onclick="result('p35')"><img src="./img/71785_1_pic100_3956.JPG"></a></div>
+                                <div class="snack_food_middle_imgs"><a href="#"><img src="./img/71785_1_pic100_3956.JPG"></a></div>
                                 <div class="snack_food_middle_ps">
-                                    <a href="#2" onclick="result('p35')"><p class="snack_food_middle_p1">可康大杯芒果味果冻(进口食品 碗装 420g)</p></a>
+                                    <a href="#"><p class="snack_food_middle_p1">可康大杯芒果味果冻(进口食品 碗装 420g)</p></a>
                                     <p class="snack_food_middle_p2">商品特点 马来西亚进口食品 全部</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div id="snack_food_right">
-                        <div id="snack_food_right_img"><a href="#2" onclick="result('p36')"><img src="./img/2011041904523517.jpg"></a></div>
+                        <div id="snack_food_right_img"><a href="#"><img src="./img/2011041904523517.jpg"></a></div>
                         <div id="snack_food_right_ps">
                             <ul>
-                                <li><a href="#2" onclick="result('p37')"><p class="snack_food_right_p">黄飞红麻辣花生(袋装 210g)</p></a></li>
-                                <li><a href="#2" onclick="result('p38')"><p class="snack_food_right_p">马来西亚Aji惊奇脆饼(优格洋葱味 袋装</p></a></li>
-                                <li><a href="#2" onclick="result('p39')"><p class="snack_food_right_p">马来西亚品味本铺五谷黑麻银杏饼(进口</p></a></li>
-                                <li><a href="#2" onclick="result('p40')"><p class="snack_food_right_p">越南Tipo鸡蛋奶油面包干(超大装 300g)</p></a></li>
-                                <li><a href="#2" onclick="result('p41')"><p class="snack_food_right_p">特鲜加钙炼奶起士(袋装 600g)</p></a></li>
+                                <li><a href="#"><p class="snack_food_right_p">黄飞红麻辣花生(袋装 210g)</p></a></li>
+                                <li><a href="#"><p class="snack_food_right_p">马来西亚Aji惊奇脆饼(优格洋葱味 袋装</p></a></li>
+                                <li><a href="#"><p class="snack_food_right_p">马来西亚品味本铺五谷黑麻银杏饼(进口</p></a></li>
+                                <li><a href="#"><p class="snack_food_right_p">越南Tipo鸡蛋奶油面包干(超大装 300g)</p></a></li>
+                                <li><a href="#"><p class="snack_food_right_p">特鲜加钙炼奶起士(袋装 600g)</p></a></li>
                             </ul>
                         </div>
                     </div>
@@ -571,46 +663,46 @@
                 <div id="oils_logo">
                     <p id="oils_p1">粮油</p>
                     <ul>
-                        <li type="none"><p class="oils_p2"><a href="#2">杂粮</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">面粉</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">面条</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">大米</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">食用油</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">进口粮油</a></p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">杂粮</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">面粉</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">面条</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">大米</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">食用油</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">进口粮油</a></p></li>  
                     </ul>
-                    <a href="#2"><p id="oils_p3">更多>></p></a>
+                    <a href="#"><p id="oils_p3">更多>></p></a>
                 </div>
                 <div id="oils_content">
                     <div id="oils_left">
-                        <a href="#2" onclick="result('p42')"><img src="./img/20110420015617865.jpg"></a>
+                        <img src="./img/20110420015617865.jpg">
                     </div>
                     <div id="oils_middle">
                         <div id="oils_middle_imgs">
-                            <div class="oils_middle_imgs"><a href="#2" onclick="result('p43')"><img src="./img/54407_1_pic100_7335.JPG"></a><a href="#2" onclick="result('p43')"><p class="oils_p3">中粮五湖优质大米(袋装 5kg)【每</p></a></div>
-                            <div class="oils_middle_imgs"><a href="#2" onclick="result('p44')"><img src="./img/54411_2_pic100_708.JPG"></a><a href="#2" onclick="result('p44')"><p class="oils_p3">香雪鸡蛋面(袋装 800g)</p></a></div>
-                            <div class="oils_middle_imgs"><a href="#2" onclick="result('p45')"><img src="./img/54414_1_pic100_7886.JPG"></a><a href="#2" onclick="result('p45')"><p class="oils_p3">香雪尚品雪花粉(袋装 2.5kg)</p></a></div>
-                            <div class="oils_middle_imgs"><a href="#2" onclick="result('p46')"><img src="./img/54425_1_pic100_3099.JPG"></a><a href="#2" onclick="result('p46')"><p class="oils_p3">香雪爽滑面(袋装 800g)</p></a></div>
+                            <div class="oils_middle_imgs"><a href="#"><img src="./img/54407_1_pic100_7335.JPG"></a><a href="#"><p class="oils_p3">中粮五湖优质大米(袋装 5kg)【每</p></a></div>
+                            <div class="oils_middle_imgs"><a href="#"><img src="./img/54411_2_pic100_708.JPG"></a><a href="#"><p class="oils_p3">香雪鸡蛋面(袋装 800g)</p></a></div>
+                            <div class="oils_middle_imgs"><a href="#"><img src="./img/54414_1_pic100_7886.JPG"></a><a href="#"><p class="oils_p3">香雪尚品雪花粉(袋装 2.5kg)</p></a></div>
+                            <div class="oils_middle_imgs"><a href="#"><img src="./img/54425_1_pic100_3099.JPG"></a><a href="#"><p class="oils_p3">香雪爽滑面(袋装 800g)</p></a></div>
                         </div>
                         <div id="oils_middle_ps">
-                            <p class="oils_p4"><img src="./img/jiantou.png"><a href="#2" onclick="result('p47')">福临门一级小磨香油(瓶装 250ml)</a></p><br>
-                            <p class="oils_p4"><img src="./img/jiantou.png"><a href="#2" onclick="result('p48')">沁州黄充氮装小米(袋装 1.6kg)</a></p>
+                            <p class="oils_p4"><img src="./img/jiantou.png"><a href="#">福临门一级小磨香油(瓶装 250ml)</a></p><br>
+                            <p class="oils_p4"><img src="./img/jiantou.png"><a href="#">沁州黄充氮装小米(袋装 1.6kg)</a></p>
                         </div>
-                        <div id="oils_middle_img"><a href="#2" onclick="result('p49')"><img src="./img/20100820055634869.jpg"></a></div>
+                        <div id="oils_middle_img"><a href="#"><img src="./img/20100820055634869.jpg"></a></div>
                     </div>
                     <div id="oils_right">
                         <div class="oils_right_imgs">
-                            <div class="oils_right_img"><a href="#2" onclick="result('p50')"><img src="./img/71885_1_pic60_195.JPG"></a></div>
-                            <div class="oils_right_p"><a href="#2" onclick="result('p50')"><p class="oils_p4">卡斯特意大利面条(进</p></a></div>
+                            <div class="oils_right_img"><a href="#"><img src="./img/71885_1_pic60_195.JPG"></a></div>
+                            <div class="oils_right_p"><a href="#"><p class="oils_p4">卡斯特意大利面条(进</p></a></div>
                         </div>
                         <div class="oils_right_imgs">
-                            <div class="oils_right_img"><a href="#2" onclick="result('p51')"><img src="./img/71890_1_pic60_6715.JPG"></a></div>
-                            <div class="oils_right_p"><a href="#2" onclick="result('p51')"><p class="oils_p4">卡斯特意大利面条(进</p></a></div>
+                            <div class="oils_right_img"><a href="#"><img src="./img/71890_1_pic60_6715.JPG"></a></div>
+                            <div class="oils_right_p"><a href="#"><p class="oils_p4">卡斯特意大利面条(进</p></a></div>
                         </div>
                         <div id="oils_right_ps">
                             <ul>
-                                <li><p class="oils_p5"><a href="#2" onclick="result('p52')">香谷坊一级大豆油(中粮出品 桶装 5L)</a></p></li>
-                                <li><p class="oils_p5"><a href="#2" onclick="result('p53')">古船富强粉(袋装 5kg)</a></p></li>
-                                <li><p class="oils_p5"><a href="#2" onclick="result('p54')">资采青仁乌黑豆(袋装 500g)</a></p></li>
+                                <li><p class="oils_p5"><a href="#">香谷坊一级大豆油(中粮出品 桶装 5L)</a></p></li>
+                                <li><p class="oils_p5"><a href="#">古船富强粉(袋装 5kg)</a></p></li>
+                                <li><p class="oils_p5"><a href="#">资采青仁乌黑豆(袋装 500g)</a></p></li>
                             </ul>
                         </div>
                     </div>
@@ -621,61 +713,61 @@
                 <div id="concoction_logo">
                     <p id="oils_p1">冲调品</p>
                     <ul>
-                        <li type="none"><p class="oils_p2"><a href="#2">姜汤</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">礼盒荟萃</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">成人奶粉</a>｜</p></li>
-                        <li type="none"><p class="oils_p2"><a href="#2">果味冲调品</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">糊状冲调品</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">蜂蜜/柚子茶</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">咖啡/奶茶</a>｜</p></li>  
-                        <li type="none"><p class="oils_p2"><a href="#2">进口冲调</a></p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">姜汤</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">礼盒荟萃</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">成人奶粉</a>｜</p></li>
+                        <li type="none"><p class="oils_p2"><a href="#">果味冲调品</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">糊状冲调品</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">蜂蜜/柚子茶</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">咖啡/奶茶</a>｜</p></li>  
+                        <li type="none"><p class="oils_p2"><a href="#">进口冲调</a></p></li>  
                     </ul>
-                    <a href="#2"><p id="oils_p3">更多>></p></a>
+                    <a href="#"><p id="oils_p3">更多>></p></a>
                 </div>
                 <div id="concoction_content">
                     <div id="concoction_left">
-                        <a href="#2" onclick="result('p55')"><img src="./img/20110420015733709.jpg"></a>
+                        <a href="#"><img src="./img/20110420015733709.jpg"></a>
                     </div>
                     <div id="concoction_middle">
                         <div id="concoction_middle_top">
-                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#2" onclick="result('p56')">雀巢(42+6)条特惠装咖啡(盒装 13g*48)</a></p></div>
-                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#2" onclick="result('p57')">吉意欧滤泡式咖啡(8袋装 8*8g)</a></p></div>
-                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#2" onclick="result('p58')">甘汁园特浓姜汤(盒装 240g)</a></p></div>
-                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#2" onclick="result('p59')">立顿香浓原味奶茶50s(袋装 15g*50)</a></p></div>
+                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#">雀巢(42+6)条特惠装咖啡(盒装 13g*48)</a></p></div>
+                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#">吉意欧滤泡式咖啡(8袋装 8*8g)</a></p></div>
+                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#">甘汁园特浓姜汤(盒装 240g)</a></p></div>
+                            <div class="concoction_middle_top_div"><p><img src="./img/li_dian.png"><a href="#">立顿香浓原味奶茶50s(袋装 15g*50)</a></p></div>
                         </div>
                         <div id="concoction_middle_bottom">
-                            <div class="concoction_middle_bottom_div"><a href="#2" onclick="result('p60')"><img src="./img/501474_1_pic100_9811.JPG"></a><p><a href="#2" onclick="result('p60')">维维果蔬豆浆粉(袋装 500g)</a></p></div>
-                            <div class="concoction_middle_bottom_div"><a href="#2" onclick="result('p61')"><img src="./img/73637_1_pic100_3634.JPG"></a><p><a href="#2" onclick="result('p61')">百花洋槐蜂蜜(瓶装 700g)</a></p></div>
-                            <div class="concoction_middle_bottom_div"><a href="#2" onclick="result('p62')"><img src="./img/73654_1_pic100_3466.JPG"></a><p><a href="#2" onclick="result('p62')">雅士利早餐豆奶粉(袋装 500g)</a></p></div>
-                            <div class="concoction_middle_bottom_div"><a href="#2" onclick="result('p63')"><img src="./img/500008_1_pic100_2559.JPG"></a><p><a href="#2" onclick="result('p63')">雀巢C(袋装 500g)</a></p></div>
+                            <div class="concoction_middle_bottom_div"><a href="#"><img src="./img/501474_1_pic100_9811.JPG"></a><p><a href="#">维维果蔬豆浆粉(袋装 500g)</a></p></div>
+                            <div class="concoction_middle_bottom_div"><a href="#"><img src="./img/73637_1_pic100_3634.JPG"></a><p><a href="#">百花洋槐蜂蜜(瓶装 700g)</a></p></div>
+                            <div class="concoction_middle_bottom_div"><a href="#"><img src="./img/73654_1_pic100_3466.JPG"></a><p><a href="#">雅士利早餐豆奶粉(袋装 500g)</a></p></div>
+                            <div class="concoction_middle_bottom_div"><a href="#"><img src="./img/500008_1_pic100_2559.JPG"></a><p><a href="#">雀巢C(袋装 500g)</a></p></div>
                         </div>
                     </div>
                     <div id="concoction_right">
-                        <div class="concoction_right_div"><a href="#2" onclick="result('p64')"><img src="./img/20110419054242207.jpg"></a></div>
-                        <div class="concoction_right_div"><a href="#2" onclick="result('p65')"><img src="./img/20110419054347638.jpg"></a></div>
-                        <div class="concoction_right_div"><a href="#2" onclick="result('p66')"><img src="./img/20110422111925293.jpg"></a></div>
+                        <div class="concoction_right_div"><a href="#"><img src="./img/20110419054242207.jpg"></a></div>
+                        <div class="concoction_right_div"><a href="#"><img src="./img/20110419054347638.jpg"></a></div>
+                        <div class="concoction_right_div"><a href="#"><img src="./img/20110422111925293.jpg"></a></div>
                     </div>
                 </div>
             </div>
 
             <div id="help">
-                <div id="help_img"><a href="#2"><img src="./img/cofcologo.png"></a></div>
-                <div id="help_p_div"><p class="help_p_bold">新手上路</p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">新用户演示</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">我买卡演示</a></p></div>
-                <div class="help_p_div"><p class="help_p_bold">付款方式</p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">支付方式</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">支付常见问题</a></p></div>
-                <div class="help_p_div"><p class="help_p_bold">送货方式</p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">配送范围时间</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">订单处理时间</a></p></div>
-                <div id="help_p_div2"><p class="help_p_bold">我买提醒</p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">找回密码</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#2">联系我们</a></p></div>
+                <div id="help_img"><a href="#"><img src="./img/cofcologo.png"></a></div>
+                <div id="help_p_div"><p class="help_p_bold">新手上路</p><p class="help_p"><img src="./img/li_dian.png"><a href="#">新用户演示</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#">我买卡演示</a></p></div>
+                <div class="help_p_div"><p class="help_p_bold">付款方式</p><p class="help_p"><img src="./img/li_dian.png"><a href="#">支付方式</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#">支付常见问题</a></p></div>
+                <div class="help_p_div"><p class="help_p_bold">送货方式</p><p class="help_p"><img src="./img/li_dian.png"><a href="#">配送范围时间</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#">订单处理时间</a></p></div>
+                <div id="help_p_div2"><p class="help_p_bold">我买提醒</p><p class="help_p"><img src="./img/li_dian.png"><a href="#">找回密码</a></p><p class="help_p"><img src="./img/li_dian.png"><a href="#">联系我们</a></p></div>
             </div>
 
             <div id="bottom">
                 <div id="bottom_top">
                     <ul>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">关于我买网</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">送货范围</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">退换货政策</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">休闲食品</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">媒体报道</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">友情链接</a>&nbsp ｜ &nbsp</p></li>
-                        <li type="none"><p class="bottom_p"><a href="#2" class="bottom_a">客服电话：4008 115 117</a></p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">关于我买网</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">送货范围</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">退换货政策</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">休闲食品</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">媒体报道</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">友情链接</a>&nbsp ｜ &nbsp</p></li>
+                        <li type="none"><p class="bottom_p"><a href="#" class="bottom_a">客服电话：4008 115 117</a></p></li>
                     </ul>
                 </div>
             </div>
