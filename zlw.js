@@ -409,3 +409,101 @@ function del_all(){
     price_sum = 0;
     price.innerHTML = "商品总价为："+price_sum+"元";
 }
+
+
+function change_img(){
+    var div1 = document.getElementById("middle_2_top_1");
+    var div2 = document.getElementById("middle_2_top_2");
+    var div3 = document.getElementById("middle_2_top_3");
+    var div4 = document.getElementById("middle_2_top_4");
+    var child = div1.childNodes;
+    for(var i=0;i<child.length;i++){
+        document.write(child[i].nodeValue);
+    }
+    
+}
+
+
+function $(id){
+    return document.getElementById(id);
+}
+function change1(){
+    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+}
+function change2(){
+    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+}
+function change3(){
+    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+}
+function change4(){
+    $("middle_2_top_1").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_2").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_3").style.backgroundImage = "url('../中粮网/img/index_bg5_1.png')";
+    $("middle_2_top_4").style.backgroundImage = "url('../中粮网/img/index_bg5_2.png')";
+}
+function openlogin1(){
+    document.getElementById("login1").style.display="block";
+    document.getElementById("loginbg").style.display="block";
+}
+function closelogin1(){
+    document.getElementById("login1").style.display="none";
+    document.getElementById("loginbg").style.display="none";
+}
+function test1(){
+    var str1 = $("login1_input1").value;
+    var str2 = $("login1_input2").value;
+    if(str1.length != 11){
+        alert("账号长度必须为11！")
+    }else if(isNaN(str1)){
+        alert("账号只能出现数字！")
+    }else if(str2.length > 12){
+        alert("密码不能超过12位，请重新输入！")
+    }else{
+        closelogin1();
+        alert("登陆成功！");
+    }
+}
+function openlogin2(){
+    document.getElementById("login2").style.display="block";
+    document.getElementById("loginbg").style.display="block";
+}
+function closelogin2(){
+    document.getElementById("login2").style.display="none";
+    document.getElementById("loginbg").style.display="none";
+}
+var a = 1;
+function openbox(){
+    a = -a;
+    if(a == -1){
+        document.getElementById("showbox").style.visibility="visible";
+    }else{
+        document.getElementById("showbox").style.visibility="hidden";
+    }
+}
+function test2(){
+    var str4 = $("login2_input1").value;
+    var str5 = $("login2_input2").value;
+    var str6 = $("login2_input3").value;
+    if(str4.length != 11){
+        alert("账号长度必须为11！")
+    }else if(isNaN(str4)){
+        alert("账号只能出现数字！")
+    }else if(str5.length > 12){
+        alert("密码不能超过12位，请重新输入！")
+    }else if(str5 != str6){
+        alert("密码不一致！")
+    }else{
+        closelogin2();
+        alert("注册成功，返回首页登陆！");
+    }
+}
