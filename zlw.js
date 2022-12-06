@@ -409,6 +409,16 @@ function del_all(){
     price_sum = 0;
     price.innerHTML = "商品总价为："+price_sum+"元";
 }
+function cost(){
+    var price = "";
+    price = document.getElementById("price").textContent;
+    if(price != "商品总价为：0元"){
+        alert(price+"，请尽快支付！");
+        del_all();  
+    }else{
+        alert("请选择商品后再结算！");
+    }
+}
 
 
 function change_img(){
@@ -506,4 +516,49 @@ function test2(){
         closelogin2();
         alert("注册成功，返回首页登陆！");
     }
+}
+
+/**
+ * 创建天气预报插件
+ */
+ function $ajax(){
+    var oAjax = null;
+    if(window.XMLHttpRequest){
+        oAjax = new XMLHttpRequest(); //ie6及以上兼容
+    }else{
+        oAjax = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    var url = 'https://restapi.amap.com/v3/weather/weatherInfo?key=e8cff7e09891763291c3eafa383ff07d&city=350121';
+    var type = 'GET';
+    oAjax.open(type, url, true);
+    oAjax.send();
+    // getWeather(xhr.responseText);
+    oAjax.onreadystatechange = function(){
+        if(oAjax.readyState ==4){
+            //完成  
+            if(oAjax.status ==200){//status：请求是否成功 （200为成功，常见失败：404）
+                getWeather(oAjax.response);
+            }else{
+                get_fail();
+            } 
+        } 
+    }
+}
+$ajax();
+//数据请求成功回调函数，用于将获取到的数据放入页面相应位置
+function getWeather(response) {
+    var temperature = $("temperature");
+    var weather = $("weather");
+    var data = get_text(response);
+    temperature.innerHTML = data[8];
+    weather.innerHTML = data[7];
+}
+function get_fail(){
+    var temperature = $("temperature");
+    var weather = $("weather");
+    temperature.innerHTML = "获取天气失败，请刷新页面或检查网络连接。";
+}
+function get_text(str){
+    var temp = str.split(",");
+    return temp;
 }
