@@ -20,18 +20,18 @@
                         <div id="login1">
                             账&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login1_input1" type="text"><br>
                             <p></p><br>
-                            密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login1_input2" type="text"><br>
+                            密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login1_input2" type="password"><br>
                             <p></p><br>
                             <input type="button" id="login1_input4" value="确定" onclick="test1()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="button" id="login1_input5" value="取消" onclick="closelogin1()">
                         </div>
                         <div id="loginbg"></div>
                         <div id="login2">
-                            账&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input1" type="text"><br>
+                            账&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;号:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input1" type="text" placeholder="输入11位数字"><br>
                             <p></p><br>
-                            密&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input2" type="text"><br>
+                            密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;码:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input2" type="text" placeholder="密码长度小于12"><br>
                             <p></p><br>
-                            密码验证:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input3" type="text"><br>
+                            密码验证:&nbsp;&nbsp;&nbsp;&nbsp;<input id="login2_input3" type="text" placeholder="与密码一致"><br>
                             <p></p><br>
                             <input type="button" id="login2_input4" value="确定" onclick="test2()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             <input type="button" id="login2_input5" value="取消" onclick="closelogin2()">
@@ -186,13 +186,13 @@
                             <div id="shop_car_content">
                                 <select id="product_text" size="10">
                                 </select>
-                                <p id="price">商品总价为：</p>
+                                <p id="price">商品总价为：0元</p>
                                 <input type="button" id="del_all" value="清空" onclick="del_all()">
                                 <input type="button" id="del" value="删除" onclick="del()">
                             </div>
                          </div>
                          <div id="settlement">
-                            <a href="#2">去结算</a>
+                            <a href="#2" onclick="cost()">去结算</a>
                          </div>
                          <div id="shop_car_list">
                             <a href="#2">购物车</a>
@@ -465,7 +465,10 @@
 
             <div id="right_1">
                 <p id="now_time"></p>
-                <iframe id="now_weather" width="232" height="80" frameborder="0" scrolling="no" hspace="0" src="https://i.tianqi.com/?c=code&a=getcode&id=8&icon=1"></iframe>
+                <div id="weather_div">
+                    &nbsp&nbsp<label id="city" class="weather_label">闽侯县</label><label id="date" class="weather_label">&nbsp&nbsp&nbsp&nbsp今日天气</label><br>
+                    <p id="weather_p">&nbsp&nbsp<label id="temperature" class="weather_label"></label><br>&nbsp&nbsp<label id="weather" class="weather_label"></label></p>
+                </div>
             </div>
             <div id="right_2">
                 <div id="right_2bg">
