@@ -1,4 +1,4 @@
-body{margin:0;width: 1920px;}
+body{margin:0;}
 #all{width:1000px;margin:auto;}
 #head{width:1000px;height:195px;margin: auto;background-image: url("./img/header_footer_1.png");}
 #logo{width: 960px;height: 80px;margin:auto;}
@@ -327,9 +327,9 @@ body{margin:0;width: 1920px;}
 #weather_p{font-size: 12px;margin: 7px;}
 
 /**/
-#login1{position: absolute;width:360px;height: 140px;top:100px;left: 780px;background-color: #ddf3da;z-index: 5;border:3px #9dc3ab solid;display: none;text-align: center;padding: 40px 0;font-family: 楷体;}
-#loginbg{position: absolute;top: 0;left: 0;height: 2970px;width: 1920px;background: #000000;z-index: 4;filter: alpha(opacity=30);-moz-opacity:0.3;opacity: 0.3;display: none;}
-#login2{position: absolute;width:360px;height: 180px;top:100px;left: 780px;background-color: #ddf3da;z-index: 5;border:3px #9dc3ab solid;display: none;text-align: center;padding: 40px 0;font-family: 楷体;}
+#login1{position: absolute;width:360px;height: 140px;top:200px;margin: auto;background-color: #ddf3da;z-index: 5;border:3px #9dc3ab solid;display: none;text-align: center;padding: 40px 0;font-family: 楷体;}
+#loginbg{position: absolute;top: 0;left: 0;height: 2970px;width: 100%;background: #000000;z-index: 4;filter: alpha(opacity=30);-moz-opacity:0.3;opacity: 0.3;display: none;}
+#login2{position: absolute;width:360px;height: 180px;top:200px;margin:auto;background-color: #ddf3da;z-index: 5;border:3px #9dc3ab solid;display: none;text-align: center;padding: 40px 0;font-family: 楷体;}
 /**/
 /**/
 #showbox{width:160px;height: 90px;border:2px #9dc3ab solid;position: relative;top:-5px;left: 480px;z-index: 2;background-color:#ddf3da;visibility: hidden;text-align: center;}
